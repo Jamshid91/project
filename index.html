@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="shortcut icon" href="assets/images/png/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/css/bootstrap5.css">
+    <link rel="stylesheet" href="assets/styles/css/ckin.css">
+    <link rel="stylesheet" href="assets/styles/css/main.css">
+</head>
+<body>
+    <header class="header">
+            <nav class="nav d-none d-md-block py-4">
+               <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex align-items-center justify-content-between">
+                        <a href="./index.html">
+                            <img src="assets/images/svg/logo.svg" alt="logo.svg">
+                        </a>
+                        <label class="position-relative w-auto h-auto">
+                            <input type="search" class="nav__search fw-normal pe-4" placeholder="Найти">
+                            <img class="nav__search-icon position-absolute top-50 " src="assets/images/svg/search.svg" alt="search.svg" class="nav__search-icon" >
+                        </label>
+                        <button class="nav__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Обратный звонок</button>
+                        <p class="nav__address fw-light">Москва, пр-кт Андропова, д. 22 <br>14 этаж, офис 1407 (м.Коломенская)</p>
+                        <div class="d-flex align-items-end flex-column">
+                            <a href="tel:+7 (499) 938-84-48" class="whatsapp d-flex align-items-center">
+                                <img src="assets/images/svg/wp.svg" alt="whatsapp.svg" class="me-2">
+                                <span>+7 (499) 938-84-48</span>
+                            </a>
+                            <p class="workDay">Работаем в будни с 9:00 до 19:00</p>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </nav>
+            <div class="header-sub d-none d-md-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-flex align-items-center justify-content-between">
+                            <div class="header-item">
+                                <a href="#" class="header-item__link">Главная</a>
+                            </div>
+                            <div class="line"></div>
+                            <div class="header-item">
+                                <span class="header-item__link me-2">О нас
+                                    <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.57505 0.664947C8.52321 0.612681 8.46154 0.571196 8.39358 0.542886C8.32563 0.514575 8.25275 0.5 8.17913 0.5C8.10552 0.5 8.03263 0.514575 7.96468 0.542886C7.89673 0.571196 7.83505 0.612681 7.78321 0.664947L5.22925 3.21891C5.17741 3.27118 5.11573 3.31266 5.04778 3.34097C4.97983 3.36928 4.90694 3.38386 4.83333 3.38386C4.75971 3.38386 4.68683 3.36928 4.61887 3.34097C4.55092 3.31266 4.48924 3.27118 4.43741 3.21891L1.88344 0.664947C1.8316 0.612681 1.76993 0.571196 1.70197 0.542886C1.63402 0.514575 1.56113 0.5 1.48752 0.5C1.41391 0.5 1.34102 0.514575 1.27307 0.542886C1.20511 0.571196 1.14344 0.612681 1.0916 0.664947C0.987739 0.769427 0.929443 0.91076 0.929443 1.05808C0.929443 1.2054 0.987739 1.34673 1.0916 1.45121L3.65114 4.01075C3.96481 4.32403 4.39 4.5 4.83333 4.5C5.27665 4.5 5.70184 4.32403 6.01551 4.01075L8.57505 1.45121C8.67891 1.34673 8.73721 1.2054 8.73721 1.05808C8.73721 0.91076 8.67891 0.769427 8.57505 0.664947Z" fill="#121212"/>
+                                    </svg>
+                                </span>
+                                <ul class="header-list position-absolute">
+                                    <li><a href="#" class="header-list__link">О компании</a></li>
+                                    <li><a href="#" class="header-list__link">Наша команда</a></li>
+                                    <li><a href="#" class="header-list__link">Сми о нас</a></li>
+                                    <li><a href="#" class="header-list__link">Отзывы</a></li>
+                                    <li><a href="#" class="header-list__link">Оплата</a></li>
+                                </ul>
+                            </div>
+                            <div class="line"></div>
+                            <div class="header-item">
+                                <span class="header-item__link me-2">Услуги
+                                    <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.57505 0.664947C8.52321 0.612681 8.46154 0.571196 8.39358 0.542886C8.32563 0.514575 8.25275 0.5 8.17913 0.5C8.10552 0.5 8.03263 0.514575 7.96468 0.542886C7.89673 0.571196 7.83505 0.612681 7.78321 0.664947L5.22925 3.21891C5.17741 3.27118 5.11573 3.31266 5.04778 3.34097C4.97983 3.36928 4.90694 3.38386 4.83333 3.38386C4.75971 3.38386 4.68683 3.36928 4.61887 3.34097C4.55092 3.31266 4.48924 3.27118 4.43741 3.21891L1.88344 0.664947C1.8316 0.612681 1.76993 0.571196 1.70197 0.542886C1.63402 0.514575 1.56113 0.5 1.48752 0.5C1.41391 0.5 1.34102 0.514575 1.27307 0.542886C1.20511 0.571196 1.14344 0.612681 1.0916 0.664947C0.987739 0.769427 0.929443 0.91076 0.929443 1.05808C0.929443 1.2054 0.987739 1.34673 1.0916 1.45121L3.65114 4.01075C3.96481 4.32403 4.39 4.5 4.83333 4.5C5.27665 4.5 5.70184 4.32403 6.01551 4.01075L8.57505 1.45121C8.67891 1.34673 8.73721 1.2054 8.73721 1.05808C8.73721 0.91076 8.67891 0.769427 8.57505 0.664947Z" fill="#121212"/>
+                                    </svg>
+                                </span>
+                                <ul class="header-list position-absolute">
+                                    <li><a href="#" class="header-list__link">О компании</a></li>
+                                    <li><a href="#" class="header-list__link">Наша команда</a></li>
+                                    <li><a href="#" class="header-list__link">Сми о нас</a></li>
+                                    <li><a href="#" class="header-list__link">Отзывы</a></li>
+                                    <li><a href="#" class="header-list__link">Оплата</a></li>
+                                </ul>
+                            </div>
+                            <div class="line"></div>
+                            <div class="header-item">
+                                <a href="#" class="header-item__link">Арбит. Упр.</a>
+                            </div>
+                            <div class="line"></div>
+                            <div class="header-item">
+                                <span class="header-item__link me-2">Выигранные дела
+                                    <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.57505 0.664947C8.52321 0.612681 8.46154 0.571196 8.39358 0.542886C8.32563 0.514575 8.25275 0.5 8.17913 0.5C8.10552 0.5 8.03263 0.514575 7.96468 0.542886C7.89673 0.571196 7.83505 0.612681 7.78321 0.664947L5.22925 3.21891C5.17741 3.27118 5.11573 3.31266 5.04778 3.34097C4.97983 3.36928 4.90694 3.38386 4.83333 3.38386C4.75971 3.38386 4.68683 3.36928 4.61887 3.34097C4.55092 3.31266 4.48924 3.27118 4.43741 3.21891L1.88344 0.664947C1.8316 0.612681 1.76993 0.571196 1.70197 0.542886C1.63402 0.514575 1.56113 0.5 1.48752 0.5C1.41391 0.5 1.34102 0.514575 1.27307 0.542886C1.20511 0.571196 1.14344 0.612681 1.0916 0.664947C0.987739 0.769427 0.929443 0.91076 0.929443 1.05808C0.929443 1.2054 0.987739 1.34673 1.0916 1.45121L3.65114 4.01075C3.96481 4.32403 4.39 4.5 4.83333 4.5C5.27665 4.5 5.70184 4.32403 6.01551 4.01075L8.57505 1.45121C8.67891 1.34673 8.73721 1.2054 8.73721 1.05808C8.73721 0.91076 8.67891 0.769427 8.57505 0.664947Z" fill="#121212"/>
+                                    </svg>
+                                </span>
+                                <ul class="header-list position-absolute">
+                                    <li><a href="#" class="header-list__link">О компании</a></li>
+                                    <li><a href="#" class="header-list__link">Наша команда</a></li>
+                                    <li><a href="#" class="header-list__link">Сми о нас</a></li>
+                                    <li><a href="#" class="header-list__link">Отзывы</a></li>
+                                    <li><a href="#" class="header-list__link">Оплата</a></li>
+                                </ul>
+                            </div>
+                            <div class="line"></div>
+                            <div class="header-item">
+                                <a href="#" class="header-item__link">Важно знать</a>
+                            </div>
+                            <div class="line"></div>
+                            <div class="header-item">
+                                <a href="#" class="header-item__link">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <nav class="nav d-block d-md-none py-4">
+                <div class="container">
+                 <div class="row">
+                     <div class="col-12 d-flex align-items-center justify-content-between">
+                         <a href="./index.html">
+                             <img src="assets/images/svg/logo.svg" alt="logo.svg">
+                         </a>
+                         <label class="position-relative w-auto h-auto">
+                             <input type="search" class="nav__search nav__search-mobile fw-normal pe-4" placeholder="Найти">
+                             <img class="nav__search-icon position-absolute top-50 " src="assets/images/svg/search.svg" alt="search.svg" class="nav__search-icon" >
+                         </label>
+                         <div class="burger d-flex justify-content-between align-items-center flex-column">
+                             <span class="burger__list"></span>
+                             <span class="burger__list"></span>
+                             <span class="burger__list"></span>
+                         </div>
+                     </div>
+                 </div>
+                </div>
+             </nav>
+    </header>
+    <div class="mobile-menu position-fixed top-0 text-white">
+        <img src="assets/images/svg/close.svg" alt="" class="close__menu position-absolute">
+       <ul class="mobile-menu-item text-center">
+           <li class="mobile-menu__list"><a href="#" class="mobile-menu__link">Главная</a></li>
+           <li class="mobile-menu__list">
+               <a href="#" class="mobile-menu__link">О нас
+                   <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M8.57505 0.664947C8.52321 0.612681 8.46154 0.571196 8.39358 0.542886C8.32563 0.514575 8.25275 0.5 8.17913 0.5C8.10552 0.5 8.03263 0.514575 7.96468 0.542886C7.89673 0.571196 7.83505 0.612681 7.78321 0.664947L5.22925 3.21891C5.17741 3.27118 5.11573 3.31266 5.04778 3.34097C4.97983 3.36928 4.90694 3.38386 4.83333 3.38386C4.75971 3.38386 4.68683 3.36928 4.61887 3.34097C4.55092 3.31266 4.48924 3.27118 4.43741 3.21891L1.88344 0.664947C1.8316 0.612681 1.76993 0.571196 1.70197 0.542886C1.63402 0.514575 1.56113 0.5 1.48752 0.5C1.41391 0.5 1.34102 0.514575 1.27307 0.542886C1.20511 0.571196 1.14344 0.612681 1.0916 0.664947C0.987739 0.769427 0.929443 0.91076 0.929443 1.05808C0.929443 1.2054 0.987739 1.34673 1.0916 1.45121L3.65114 4.01075C3.96481 4.32403 4.39 4.5 4.83333 4.5C5.27665 4.5 5.70184 4.32403 6.01551 4.01075L8.57505 1.45121C8.67891 1.34673 8.73721 1.2054 8.73721 1.05808C8.73721 0.91076 8.67891 0.769427 8.57505 0.664947Z" fill="#fff"/>
+                   </svg>
+               </a>
+               <ol class="info-item">
+                   <li class="info-item__list"><a href="#" class="info-item__link">О компании</a></li>
+                   <li class="info-item__list"><a href="#" class="info-item__link">Наша команда</a></li>
+                   <li class="info-item__list"><a href="#" class="info-item__link">Сми о нас</a></li>
+                   <li class="info-item__list"><a href="#" class="info-item__link">Отзывы</a></li>
+                   <li class="info-item__list"><a href="#" class="info-item__link">Оплата</a></li>
+               </ol>
+           </li>
+           <li class="mobile-menu__list">
+               <a href="#" class="mobile-menu__link">Услуги
+                   <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M8.57505 0.664947C8.52321 0.612681 8.46154 0.571196 8.39358 0.542886C8.32563 0.514575 8.25275 0.5 8.17913 0.5C8.10552 0.5 8.03263 0.514575 7.96468 0.542886C7.89673 0.571196 7.83505 0.612681 7.78321 0.664947L5.22925 3.21891C5.17741 3.27118 5.11573 3.31266 5.04778 3.34097C4.97983 3.36928 4.90694 3.38386 4.83333 3.38386C4.75971 3.38386 4.68683 3.36928 4.61887 3.34097C4.55092 3.31266 4.48924 3.27118 4.43741 3.21891L1.88344 0.664947C1.8316 0.612681 1.76993 0.571196 1.70197 0.542886C1.63402 0.514575 1.56113 0.5 1.48752 0.5C1.41391 0.5 1.34102 0.514575 1.27307 0.542886C1.20511 0.571196 1.14344 0.612681 1.0916 0.664947C0.987739 0.769427 0.929443 0.91076 0.929443 1.05808C0.929443 1.2054 0.987739 1.34673 1.0916 1.45121L3.65114 4.01075C3.96481 4.32403 4.39 4.5 4.83333 4.5C5.27665 4.5 5.70184 4.32403 6.01551 4.01075L8.57505 1.45121C8.67891 1.34673 8.73721 1.2054 8.73721 1.05808C8.73721 0.91076 8.67891 0.769427 8.57505 0.664947Z" fill="#fff"/>
+                   </svg>
+               </a>
+               <ol class="info-item">
+                   <li class="info-item__list"><a href="#" class="info-item__link">О компании</a></li>
+                   <li class="info-item__list"><a href="#" class="info-item__link">Наша команда</a></li>
+                   <li class="info-item__list"><a href="#" class="info-item__link">Сми о нас</a></li>
+                   <li class="info-item__list"><a href="#" class="info-item__link">Отзывы</a></li>
+                   <li class="info-item__list"><a href="#" class="info-item__link">Оплата</a></li>
+               </ol>
+           </li>
+           <li class="mobile-menu__list"><a href="#" class="mobile-menu__link">Арбит. Упр.</a></li>
+           <li class="mobile-menu__list">
+               <a href="#" class="mobile-menu__link">Выигранные дела
+                   <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M8.57505 0.664947C8.52321 0.612681 8.46154 0.571196 8.39358 0.542886C8.32563 0.514575 8.25275 0.5 8.17913 0.5C8.10552 0.5 8.03263 0.514575 7.96468 0.542886C7.89673 0.571196 7.83505 0.612681 7.78321 0.664947L5.22925 3.21891C5.17741 3.27118 5.11573 3.31266 5.04778 3.34097C4.97983 3.36928 4.90694 3.38386 4.83333 3.38386C4.75971 3.38386 4.68683 3.36928 4.61887 3.34097C4.55092 3.31266 4.48924 3.27118 4.43741 3.21891L1.88344 0.664947C1.8316 0.612681 1.76993 0.571196 1.70197 0.542886C1.63402 0.514575 1.56113 0.5 1.48752 0.5C1.41391 0.5 1.34102 0.514575 1.27307 0.542886C1.20511 0.571196 1.14344 0.612681 1.0916 0.664947C0.987739 0.769427 0.929443 0.91076 0.929443 1.05808C0.929443 1.2054 0.987739 1.34673 1.0916 1.45121L3.65114 4.01075C3.96481 4.32403 4.39 4.5 4.83333 4.5C5.27665 4.5 5.70184 4.32403 6.01551 4.01075L8.57505 1.45121C8.67891 1.34673 8.73721 1.2054 8.73721 1.05808C8.73721 0.91076 8.67891 0.769427 8.57505 0.664947Z" fill="#fff"/>
+                   </svg>
+               </a>
+               <ol class="info-item">
+                   <li class="info-item__list"><a href="#" class="info-item__link">О компании</a></li>
+                   <li class="info-item__list"><a href="#" class="info-item__link">Наша команда</a></li>
+                   <li class="info-item__list"><a href="#" class="info-item__link">Сми о нас</a></li>
+                   <li class="info-item__list"><a href="#" class="info-item__link">Отзывы</a></li>
+                   <li class="info-item__list"><a href="#" class="info-item__link">Оплата</a></li>
+               </ol>
+           </li>
+           <li class="mobile-menu__list"><a href="#" class="mobile-menu__link">Важно знать</a></li>
+           <li class="mobile-menu__list"><a href="#" class="mobile-menu__link">Контакты</a></li>
+       </ul>
+       <p class="address text-center my-4">Москва, пр-кт Андропова, д. 22 <br>14 этаж, офис 1407 (м.Коломенская)</p>
+           <div class="d-flex align-items-center justify-content-center flex-column">
+               <a href="tel:+7 (499) 938-84-48" class="whatsapp d-flex align-items-center">
+                   <img src="assets/images/svg/wp.svg" alt="whatsapp.svg" class="me-2">
+                   <span>+7 (499) 938-84-48</span>
+               </a>
+               <p class="workDay">Работаем в будни с 9:00 до 19:00</p>
+           </div>
+           <div class="text-center mt-4">
+               <button class="nav__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Обратный звонок</button>
+           </div>
+    </div>
+    <!-- End header -->
+
+    <section class="wrapper">
+        <div class="container d-flex justify-content-between flex-column h-100">
+            <div class="row d-flex align-items-center">
+                <div class="col-xl-7 col-md-6">
+                    <p class="wrapper__sup-text">Законно спишем ваши долги!</p>
+                    <h1 class="wrapper__title">Банкротство юридических лиц</h1>
+                </div>
+                <div class="col-xl-4 offset-xl-1 col-md-6">
+                    <div class="wrapper-item">
+                        <form class="wrapper-form">
+                            <h5 class="wrapper-form__title">Оставьте заявку сегодня и получите первый месяц
+                                <strong>БЕСПЛАТНО!</strong>
+                             </h5>
+                            <div class="debt w-100 px-3 mt-4 position-relative bg-white d-flex align-items-center justify-content-between">Долг до 300 тыс. руб.
+                                <svg width="19" height="15" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.57505 0.664947C8.52321 0.612681 8.46154 0.571196 8.39358 0.542886C8.32563 0.514575 8.25275 0.5 8.17913 0.5C8.10552 0.5 8.03263 0.514575 7.96468 0.542886C7.89673 0.571196 7.83505 0.612681 7.78321 0.664947L5.22925 3.21891C5.17741 3.27118 5.11573 3.31266 5.04778 3.34097C4.97983 3.36928 4.90694 3.38386 4.83333 3.38386C4.75971 3.38386 4.68683 3.36928 4.61887 3.34097C4.55092 3.31266 4.48924 3.27118 4.43741 3.21891L1.88344 0.664947C1.8316 0.612681 1.76993 0.571196 1.70197 0.542886C1.63402 0.514575 1.56113 0.5 1.48752 0.5C1.41391 0.5 1.34102 0.514575 1.27307 0.542886C1.20511 0.571196 1.14344 0.612681 1.0916 0.664947C0.987739 0.769427 0.929443 0.91076 0.929443 1.05808C0.929443 1.2054 0.987739 1.34673 1.0916 1.45121L3.65114 4.01075C3.96481 4.32403 4.39 4.5 4.83333 4.5C5.27665 4.5 5.70184 4.32403 6.01551 4.01075L8.57505 1.45121C8.67891 1.34673 8.73721 1.2054 8.73721 1.05808C8.73721 0.91076 8.67891 0.769427 8.57505 0.664947Z" fill="rgba(89, 89, 89, 1)"/>
+                                </svg>
+                            </div>
+                            <input type="text" class="wrapper-form__inp phone-number my-3 w-100 px-3" placeholder="+7 (999) 999-99-99" required>
+
+                            <button class="wrapper-form__btn w-100 text-white mb-4">Оставить заявку</button>
+                            <p class="wrapper-form__text">Нажимая на кнопку вы соглашаетесь с Политикой конфиденциальности</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-lg-0 mt-5">
+                <div class="col-md-4 d-flex align-items-center justify-content-between position-relative pb-md-0 mb-md-0 pb-4 mb-4">
+                    <p class="wrapper__sub-info">Консультация <br> бесплатно</p>
+                    <img src="assets/images/svg/cons.svg" alt="icon.svg" class="wrapper__sub-icon cons_icon me-lg-2">
+                    <div class="wrapper-sub-line position-absolute"></div>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-between position-relative pb-md-0 mb-md-0 pb-4 mb-4">
+                    <p class="wrapper__sub-info">Гарантия <br> списания долга</p>
+                    <img src="assets/images/svg/garn.svg" alt="icon.svg" class="wrapper__sub-icon me-lg-2">
+                    <div class="wrapper-sub-line position-absolute"></div>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-between">
+                    <p class="wrapper__sub-info">Защита от <br> коллекторов</p>
+                    <img src="assets/images/svg/secr.svg" alt="icon.svg" class="wrapper__sub-icon">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End wrapper -->
+
+    <section class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex align-items-start align-items-lg-center justify-content-between flex-lg-row flex-column">
+                    <h2 class="slider__title">Предоставляем <br> услуги по банкротству:</h2>
+                    <div class="mt-lg-0 mt-3 slider-btns">
+                        <button class="slider-sort active-sort me-sm-4 me-0">Для физических лиц</button>
+                        <button class="slider-sort">Для юридических лиц</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleControls" class="carousel slide position-relative" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item  active">
+                            <div class="d-flex justify-content-between flex-md-row flex-column-reverse">
+                                <div class="carousel-item-list d-flex align-items-start justify-content-between flex-column">
+                                    <h2 class="carousel__title text-white">Банкротство физических лиц</h2>
+                                    <p class="carousel__text">Если Вы оказались в сложной жизненной ситуации и не справляетесь со своими кредитными обязательствами, есть способ законно избавиться от долгов!</p>
+                                    <button class="carousel__btn text-white">Подробнее об услуге</button>
+                                </div>
+                                <div class="carousel-item-list position-relative">
+                                    <img src="assets/images/png/img1.png" alt="carousel.png" class="carousel__img position-absolute w-100 h-100 top-0 start-0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="d-flex justify-content-between flex-md-row flex-column-reverse">
+                                <div class="carousel-item-list d-flex align-items-start justify-content-between flex-column">
+                                    <h2 class="carousel__title text-white">Банкротство физических лиц</h2>
+                                    <p class="carousel__text">Если Вы оказались в сложной жизненной ситуации и не справляетесь со своими кредитными обязательствами, есть способ законно избавиться от долгов!</p>
+                                    <button class="carousel__btn text-white">Подробнее об услуге</button>
+                                </div>
+                                <div class="carousel-item-list position-relative">
+                                    <img src="assets/images/png/video.png" alt="carousel.png" class="carousel__img position-absolute w-100 h-100 top-0 start-0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="d-flex justify-content-between flex-md-row flex-column-reverse">
+                                <div class="carousel-item-list d-flex align-items-start justify-content-between flex-column">
+                                    <h2 class="carousel__title text-white">Банкротство физических лиц</h2>
+                                    <p class="carousel__text">Если Вы оказались в сложной жизненной ситуации и не справляетесь со своими кредитными обязательствами, есть способ законно избавиться от долгов!</p>
+                                    <button class="carousel__btn text-white">Подробнее об услуге</button>
+                                </div>
+                                <div class="carousel-item-list position-relative">
+                                    <img src="assets/images/png/news1.png" alt="carousel.png" class="carousel__img position-absolute w-100 h-100 top-0 start-0">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button> -->
+                        <div class="carousel-control-next position-absolute top-50 d-flex align-items-center justify-content-center" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.999998 1L13 13L1 25" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-md-5 mt-4">
+                <div class="col-12">
+                    <p class="slider__sub-text">*Юридическая компания «Банкротпроект» несет персональную ответственность за каждое дело. Мы максимально ответственно относимся к своим доверителям, дорожим своей репутацией и нацелены на долгосрочное развитие.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End slider -->
+
+    <section class="questions">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="questions__title">Остались вопросы?</h2>
+                    <p class="questions__sub-title">Оставьте заявку на бесплатную консультацию!</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <form class="questions-form d-flex flex-wrap justify-content-xl-start justify-content-center">
+                        <input type="text" class="questions-form__inp px-3" id="userName" placeholder="Ваше имя" required>
+                        <input type="text" class="questions-form__inp phone-number px-3 mx-0 mx-md-3 mt-md-0 mt-3" id="userPhone" placeholder="+7 (999) 999-99-99" required>
+                        <button type="submit" class="questions-form__btn mt-lg-0 mt-3">Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End  questions-->
+
+    <section class="project">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <video poster="assets/images/png/video.png" 
+                            src="assets/video/video.mp4" 
+                            data-overlay="1" 
+                            data-ckin="compact"
+                            >
+                    </video>
+                </div>
+                <div class="col-lg-4">
+                    <div class="project-item d-flex align-items-center justify-content-between position-relative ms-0 ms-lg-3">
+                        <p class="project-item__text">Гарантия <br> Результата</p>
+                        <img src="assets/images/png/pr1.png" alt="icon.png" class="project-item__png">
+                        <div class="line-sub"></div>
+                    </div>
+                    <div class="project-item d-flex align-items-center justify-content-between position-relative ms-0 ms-lg-3">
+                        <p class="project-item__text">Свои арбитражные <br> управляющие</p>
+                        <img src="assets/images/png/pr2.png" alt="icon.png" class="project-item__png">
+                        <div class="line-sub d-lg-none"></div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="project-item d-flex align-items-center justify-content-between position-relative ms-0 ms-lg-3">
+                        <p class="project-item__text">Строгое соблюдение <br> сроков</p>
+                        <img src="assets/images/png/pr3.png" alt="icon.png" class="project-item__png">
+                        <div class="line-right"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="project-item d-flex align-items-center justify-content-between position-relative ms-0 ms-lg-3">
+                        <p class="project-item__text">Опыт работы <br> более 10 лет</p>
+                        <img src="assets/images/png/pr4.png" alt="icon.png" class="project-item__png">
+                        <div class="line-right"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="project-item d-flex align-items-center justify-content-between position-relative ms-0 ms-lg-3">
+                        <p class="project-item__text">Лучшие цены <br> на рынке</p>
+                        <img src="assets/images/png/pr5.png" alt="icon.png" class="project-item__png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered d-flex align-items-center justify-content-center">
+      <div class="modal-content position-relative p-3">
+          <h5 class="modal-title text-white fs-4">Обратный звонок</h5>
+          <img src="assets/images/svg/close-modal.svg" alt="" class="close-modal position-absolute">
+        <div class="modal-body mt-5 p-0">
+            <form class="modal-form">
+                <input type="text" class="modal-form__inp w-100 mb-3" placeholder="Ваше имя" required>
+                <input type="text" class="modal-form__inp phone-number mb-3 w-100" placeholder="+7 (999) 999-99-99" required>
+                <button class="modal-form__btn text-white w-100">Перезвоните мне!</button>
+            </form>
+            <p class="modal__text mt-4">Оставьте свой номер телефона. В течение 10 минут с вами свяжется наш менеджер и проконсультирует по всем вопросам. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="assets/js/plugins/jquery.js"></script>
+    <script src="assets/js/plugins/mask.js"></script>
+    <script src="assets/js/plugins/bootstrap.js"></script>
+    <script src="assets/js/plugins/ckin.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
