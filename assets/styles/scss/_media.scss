@@ -64,17 +64,16 @@
             height: 50px;
             font-size: 18px;
         }
-        .carousel {
+        .owl-carousel {
             margin-top: 70px;
 
-            &-item {
+            .item {
                 background-color: rgba(27, 27, 27, 1);
                 padding: 20px 25px;
-
-                &-list {
-                    width: 48.5%;
-                    height: 350px;
-                }
+            }
+            &-list {
+                width: 48.5%;
+                height: 350px;
             }
             &__title {
                 font-size: 50px;
@@ -87,12 +86,41 @@
                 width: 250px;
                 height: 50px;
             }
-            &-control-next {
-                right: 0px;
-            }
         }
     }
+    .carousel-control-next {
+        right: 0px;
+    }
     // End Carousel
+
+        
+    .our-team {
+        .meneger {
+            height: 450px;
+            &__name {
+                font-size: 20px;
+            }
+            &__info {
+                font-size: 14px;
+            }
+        }
+        &__title {
+            font-size: 50px;
+            line-height: 50px;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        &-list {
+            &__text {
+                font-size: 18px;
+            }
+        }
+        &__btn {
+        }
+    }
+    // End our-team
 }
 
 // TABLET
@@ -144,27 +172,66 @@
     }
     // End wrapper
     
-.project {
-    padding: 100px 0;
+    .project {
+        padding: 100px 0;
 
-    .compact__button--big{
-        width: 80px;
-        height: 50px;
-        border-radius: 15px;
-        font-size: 30px;
-    }
+        .compact__button--big{
+            width: 80px;
+            height: 50px;
+            border-radius: 15px;
+            font-size: 30px;
+        }
 
-    &-item {
-        padding: 35px 0;
-        .line-right {
-            left: 0;
-            top: 100%;
-            width: 100%;
-            height: 4px;
+        &-item {
+            padding: 35px 0;
+            .line-right {
+                left: 0;
+                top: 100%;
+                width: 100%;
+                height: 4px;
+            }
         }
     }
-}
-// End project
+    // End project
+
+    .reviews {
+        padding: 80px 0 160px 0;
+
+        &__title {
+            font-size: 40px;
+            line-height: 48px;
+        }
+        &-info {
+            width: 100%;
+            &__num {
+                font-size: 55px;
+            }
+            &__grade {
+                font-size: 24px;
+            }
+            &__btn {
+                width: auto;
+                padding: 0 10px;
+                height: 50px;
+                font-size: 18px;
+                margin-left: 0px;
+            }
+        }
+        .owl-carousel {
+            .item {
+                padding: 24px;
+                .user__name {
+                    font-size: 40px;
+                }
+            }
+            &-info {
+                .review__text {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    // reviews
     
 }
 
@@ -214,16 +281,15 @@
             height: 50px;
             font-size: 18px;
         }
-        .carousel {
-            &-item {
+        .owl-carousel {
+            .item {
                 padding: 20px 15px;
-
-                &-list {
-                    width: 100%;
-                    height: auto;
-                    &:nth-child(2) {
-                        height: 300px;
-                    }
+            }
+            &-list {
+                width: 100%;
+                height: auto;
+                &:nth-child(2) {
+                    height: 300px;
                 }
             }
             &__title {
@@ -237,12 +303,47 @@
             &__btn {
                 margin-top: 20px;
             }
-            &-control-next {
-                right: 0px;
-            }
         }
     }
+    
+    .owl-next {
+        right: -15px;
+    }
     // End Carousel
+
+    
+    .our-team {
+        .meneger {
+            width: 50%;
+            height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            &__name {
+                font-size: 24px;
+            }
+            &__info {
+                font-size: 16px;
+            }
+        }
+        &__title {
+            font-size: 32px;
+            line-height: 32px;
+            margin-top: 24px;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        &-list {
+            &__text {
+                font-size: 16px;
+            }
+        }
+        &__btn {
+            width: 90%;
+        }
+    }
+    // End our-team
 }
 
 // MOBILE
@@ -254,9 +355,9 @@
         }
         } 
     }   
-        .mobile-menu {
-            width: 100%;
-        }
+    .mobile-menu {
+         width: 100%;
+     }
     // End header
 
     
@@ -304,14 +405,13 @@
         &-btns {
             width: 100%;
         }
-        .carousel {
-            &-item {
+        .owl-carousel {
+            .item {
                 padding: 24px;
-
-                &-list {
-                    &:nth-child(2) {
-                        height: 200px;
-                    }
+            }
+            &-list {
+                &:nth-child(2) {
+                    height: 200px;
                 }
             }
             &__title {
@@ -327,13 +427,13 @@
                 font-size: 16px;
                 margin-top: 20px;
             }
-            &-control-next {
-                right: 0px;
-            }
         }
         &__sub-text {
             font-size: 16px;
         }
+    }
+    .carousel-control-next {
+        right: 0px;
     }
     // End Carousel
 
@@ -373,9 +473,74 @@
             }
         }
     }
+    // End project
+
+    
+    .reviews {
+        padding: 80px 0;
+        position: relative;
+
+        &__title {
+            font-size: 32px;
+            line-height: 38px;
+        }
+        &-info {
+            position: absolute;
+            left: 0;
+            bottom: 30px;
+            &__num {
+                font-size: 64px;
+            }
+            &__btn {
+                width: 100% !important;
+                height: 50px;
+                font-size: 16px;
+                margin-left: 0;
+            }
+        }
+        .owl-carousel {
+            margin-bottom: 130px;
+            .item {
+                padding: 24px;
+                .user__name {
+                    font-size: 32px;
+                    margin-left: 10px;
+                }
+            }
+            &-info {
+                padding-left: 0;
+                .review__text {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    // reviews
+
+    
+    .our-team {
+        .meneger {
+            width: 75%;
+        }
+        &-list {
+            width: 100%;
+            text-align: start;
+            &__text {
+                font-size: 16px;
+            }
+        }
+        &__btn {
+            width: 90%;
+        }
+    }
+    // End our-team
     
 }
 
 @media screen and(max-width: 420px) {
-    
+    .our-team {
+        .meneger {
+            width: 90%;
+        }
+    }
 }

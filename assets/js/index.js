@@ -29,6 +29,22 @@ wrapper.addEventListener('click', () => {
   })
 });
 
+// Mask phone number
 $(document).ready(function() {
   $(".phone-number").mask("+7 (999) 99-99-999");
-})
+});
+
+// carousel
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:20,
+  nav:true,
+  dots:false,
+  touchDrag: true,
+  mouseDrag:true,
+  responsive:{
+      0:{
+          items:1
+      }
+    }
+  })
