@@ -114,13 +114,8 @@ a, p {
             width: 300px !important;
         }
     }
-    .workDay {
-        color: var(--gray);
-        font-size: 12px;
-        margin-top: 5px;
-    }
     &-sub {
-        padding: 12px 0;
+        height: auto;
         background: var(--gradient-green);
         position: relative;
         z-index: 5;
@@ -136,6 +131,7 @@ a, p {
         align-items: center;
         transition: .3s;
         cursor: pointer;
+        height: 47px;
         &__link {
             transition: .3s;
             font-size: 18px;
@@ -149,7 +145,7 @@ a, p {
         }
     }
     &-list {
-        top: 39px;
+        top: 100%;
         left: 50%;
         transform: translateX(-50%);
         width: 180px;
@@ -159,6 +155,7 @@ a, p {
         text-align: center;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
+        z-index: 0;
         display: none;
         li {
             margin-top: 10px;
@@ -173,11 +170,8 @@ a, p {
             }
         }
     }
-    .showList .header-list {
+    .header-item:hover .header-list{
         display: block;
-    }
-    .showList svg {
-        transform: rotate(180deg);
     }
 }
 .mobile-menu {
@@ -246,6 +240,11 @@ a, p {
         }
     }
 }
+.workDay {
+    color: var(--gray);
+    font-size: 12px;
+    margin-top: 5px;
+}
 // End header
 
 // Start wrapper
@@ -293,6 +292,46 @@ a, p {
             font-size: 24px;
             font-weight: 400;
             color: rgba(89, 89, 89, 1);
+        }
+        .debt {
+            input {
+                cursor: pointer;
+            }
+            .arrow {   
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 16px;
+            }
+            &-item {
+                background-color: #fff;
+                top: 50px;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+                z-index: 5;
+                max-height: 185px;
+                overflow-y: scroll;
+                    &::-webkit-scrollbar {
+                        width: 4px;
+                    }
+                    
+                    &::-webkit-scrollbar-thumb {
+                        background: var(--blue); 
+                        border-radius: 10px;
+                    }
+            }
+            &-list {
+                padding: 5px 15px;
+                cursor: pointer;
+                &:hover {
+                    background: var(--gradient-green);
+                    color: var(--white);
+                }
+                &:last-child {
+                    border-bottom-left-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                }
+            }
         }
         &__btn {
             height: 64px;
@@ -851,6 +890,13 @@ a, p {
 
         &__text {
             color: var(--gray);
+            a {
+                border-bottom: 1px solid var(--gray);
+                &:hover {
+                    color: var(--green);
+                    border-bottom: 1px solid var(--green);
+                }
+            }
         }
 
         &__icons {
