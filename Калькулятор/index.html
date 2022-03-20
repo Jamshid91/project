@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="calculator">
+                <div class="calculator-item">
+                    <h2 class="calculator-item__title">Калькулятор проекта</h2>
+                    <div class="calculator-list">
+                        <h3 class="calculator-list__title">Сложность анализа</h3>
+                        <div class="calculator-input">
+                            <span>Средне</span>
+                            <input type="range" class="range" min="0" max="3" step="1" value="1">
+                        </div>
+                        <div class="grading">
+                            <span class="easy">Легко</span>
+                            <span class="medium">Средне</span>
+                            <span class="no-easy">Непросто</span>
+                            <span class="hard">Сложно</span>
+                        </div>
+                    </div>
+                    <div class="calculator-list">
+                        <h3 class="calculator-list__title">Сложность разработки</h3>
+                        <div class="calculator-input development_inp">
+                            <span>Непросто</span>
+                            <input type="range" class="range" min="0" max="3" step="1" value="2">
+                        </div>
+                        <div class="grading">
+                            <span class="easy">Легко</span>
+                            <span class="medium">Средне</span>
+                            <span class="no-easy">Непросто</span>
+                            <span class="hard">Сложно</span>
+                        </div>
+                    </div>
+
+                    <label for="check1" class="calculator__label">
+                        <input type="checkbox" class="calculator__check" id="check1" checked>
+                        Согласование с маркетингом
+                    </label>
+                    <label for="check2" class="calculator__label">
+                        <input type="checkbox" class="calculator__check" id="check2" checked>
+                        Согласование с КС
+                    </label>
+                    <label for="check3" class="calculator__label">
+                        <input type="checkbox" class="calculator__check" id="check3">
+                        Согласование с внешними поставщиками
+                    </label>
+                </div>
+                <div class="calculator-info">
+                    <h4 class="calculator-info__sup">Сложность проекта</h4>
+                    <h3 class="calculator-info__title">18 утюгов</h3>
+                    <hr>
+                    <div class="calculator-info-list">
+                        <span class="calculator-info-list__text">Разработка концепции</span>
+                        <strong class="calculator-info-list__day">14 дней / 5 MP</strong>
+                    </div>
+                    <div class="calculator-info-list">
+                        <span class="calculator-info-list__text">Согласование концепции</span>
+                        <strong class="calculator-info-list__day">7 дней / 3 MP</strong>
+                    </div>
+                    <div class="calculator-info-list">
+                        <span class="calculator-info-list__text">Разработка ФТ</span>
+                        <strong class="calculator-info-list__day">20 дней / 7 MP</strong>
+                    </div>
+                    <div class="calculator-info-list">
+                        <span class="calculator-info-list__text">Разработка ТЗ</span>
+                        <strong class="calculator-info-list__day">7 дней / 14 MP</strong>
+                    </div>
+                    <div class="calculator-info-list">
+                        <span class="calculator-info-list__text">Декомпозиция</span>
+                        <strong class="calculator-info-list__day">1 день / 2 MP</strong>
+                    </div>
+                    <div class="calculator-info-list">
+                        <span class="calculator-info-list__text">Программирование</span>
+                        <strong class="calculator-info-list__day">23 дня / 20 SP</strong>
+                    </div>
+                    <div class="calculator-info-list">
+                        <span class="calculator-info-list__text">Тестирование</span>
+                        <strong class="calculator-info-list__day">5 дней / 3 TP</strong>
+                    </div>
+                    <div class="calculator-btn">
+                        <button class="calculator-info__saveBtn">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

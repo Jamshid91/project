@@ -8,7 +8,17 @@ const burger = document.querySelector('.burger'),
       wrapperFormInp = document.querySelector('.wrapper-form__inp'),
       sliderBtns = document.querySelectorAll('.slider-btns button'),
       forIndividuals = document.querySelector('.for-individuals'),
-      forLegalEntities = document.querySelector('.for-legal-entities')
+      forLegalEntities = document.querySelector('.for-legal-entities'),
+      headerItemLink = document.querySelectorAll('.header-item__link')
+
+headerItemLink.forEach(el => {
+  el.addEventListener('click', () => {
+    headerItemLink.forEach(link => {
+      link.classList.remove('active')
+    })
+    el.classList.toggle('active')
+  })
+})
 
 burger.addEventListener('click', () => {
   mobileMenu.classList.add('showMenu');
@@ -72,5 +82,13 @@ $('.owl-carousel').owlCarousel({
       0:{
           items:1
       }
-    }
+    },
+    navText: [
+      `<svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.999998 1L13 13L1 25" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>`,
+      `<svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.999998 1L13 13L1 25" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>`
+    ]
   })

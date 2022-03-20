@@ -21,19 +21,15 @@
                         <a href="./index.html">
                             <img src="assets/images/svg/logo.svg" alt="logo.svg">
                         </a>
-                        <label class="position-relative w-auto h-auto">
-                            <input type="search" class="nav__search fw-normal pe-4" placeholder="Найти">
-                            <img class="nav__search-icon position-absolute top-50 " src="assets/images/svg/search.svg" alt="search.svg" class="nav__search-icon" >
-                        </label>
-                        <button class="nav__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Обратный звонок</button>
-                        <p class="nav__address fw-light">Москва, пр-кт Андропова, д. 22 <br>14 этаж, офис 1407 (м.Коломенская)</p>
-                        <div class="d-flex align-items-end flex-column">
-                            <a href="tel:+7 (499) 938-84-48" class="whatsapp d-flex align-items-center">
-                                <img src="assets/images/svg/wp.svg" alt="whatsapp.svg" class="me-2">
-                                <span>+7 (499) 938-84-48</span>
-                            </a>
+                        <div class="">
+                            <p class="nav__address fw-light">Москва, пр-кт Андропова, д. 22 14 этаж, офис 1407 (м.Коломенская)</p>
                             <p class="workDay">Работаем в будни с 9:00 до 19:00</p>
                         </div>
+                        <div class="d-flex align-items-center">
+                            <a href="#"><img src="assets/images/svg/wp.svg" alt="whatsapp.svg" class="me-2"></a>
+                            <a href="tel:+7499938-84-48" class="whatsapp">+7 (499) 938-84-48</a>
+                        </div>
+                        <button class="nav__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Обратный звонок</button>
                     </div>
                 </div>
                </div>
@@ -43,7 +39,7 @@
                     <div class="row">
                         <div class="col-12 d-flex align-items-center justify-content-between">
                             <div class="header-item">
-                                <a href="#" class="header-item__link">Главная</a>
+                                <a href="#" class="header-item__link active">Главная</a>
                             </div>
                             <div class="line"></div>
                             <div class="header-item">
@@ -112,18 +108,20 @@
                 <div class="container">
                  <div class="row">
                      <div class="col-12 d-flex align-items-center justify-content-between">
+                        <div class="burger d-flex justify-content-between align-items-center flex-column">
+                            <span class="burger__list"></span>
+                            <span class="burger__list"></span>
+                            <span class="burger__list"></span>
+                        </div>
                          <a href="./index.html">
                              <img src="assets/images/svg/logo.svg" alt="logo.svg">
                          </a>
-                         <label class="position-relative w-auto h-auto">
-                             <input type="search" class="nav__search nav__search-mobile fw-normal pe-4" placeholder="Найти">
-                             <img class="nav__search-icon position-absolute top-50 " src="assets/images/svg/search.svg" alt="search.svg" class="nav__search-icon" >
-                         </label>
-                         <div class="burger d-flex justify-content-between align-items-center flex-column">
-                             <span class="burger__list"></span>
-                             <span class="burger__list"></span>
-                             <span class="burger__list"></span>
-                         </div>
+                         <button class="nav__btn rounded-circle" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#fff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z"/></svg>
+                         </button>
+                     </div>
+                     <div class="col-12">
+                         <p class="nav-mobile__text text-center mt-2">Ваши долги - наша забота</p>
                      </div>
                  </div>
                 </div>
@@ -179,27 +177,22 @@
            <li class="mobile-menu__list"><a href="#" class="mobile-menu__link">Важно знать</a></li>
            <li class="mobile-menu__list"><a href="#" class="mobile-menu__link">Контакты</a></li>
        </ul>
-       <p class="address text-center my-4">Москва, пр-кт Андропова, д. 22 <br>14 этаж, офис 1407 (м.Коломенская)</p>
-           <div class="d-flex align-items-center justify-content-center flex-column">
-               <a href="tel:+7 (499) 938-84-48" class="whatsapp d-flex align-items-center">
-                   <img src="assets/images/svg/wp.svg" alt="whatsapp.svg" class="me-2">
-                   <span>+7 (499) 938-84-48</span>
-               </a>
-               <p class="workDay">Работаем в будни с 9:00 до 19:00</p>
-           </div>
-           <div class="text-center mt-4">
-               <button class="nav__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Обратный звонок</button>
-           </div>
+       <p class="address text-center mt-3">Москва, пр-кт Андропова, д. 22 <br>14 этаж, офис 1407 (м.Коломенская)</p>
+       <p class="workDay text-center">Работаем в будни с 9:00 до 19:00</p>
+            <div class="d-flex align-items-center justify-content-center mt-5">
+                <a href="#"><img src="assets/images/svg/wp.svg" alt="whatsapp.svg" class="me-2"></a>
+                <a href="tel:+7499938-84-48" class="whatsapp">+7 (499) 938-84-48</a>
+            </div>
     </div>
     <!-- End header -->
 
     <section class="wrapper position-relative">
         <img src="assets/images/png/wrapper.png" alt="" class="header__bg position-absolute top-0 start-0 w-100 h-100">
-        <div class="container d-flex justify-content-between flex-column h-100 position-relative">
-            <div class="row d-flex align-items-center">
+        <div class="container d-flex justify-content-between flex-column position-relative h-100">
+            <div class="row d-flex align-items-start">
                 <div class="col-xl-7 col-md-6">
-                    <p class="wrapper__sup-text">Законно спишем ваши долги!</p>
                     <h1 class="wrapper__title">Банкротство юридических лиц</h1>
+                    <p class="wrapper__sup-text">Мы законно спишем ваши долги!</p>
                 </div>
                 <div class="col-xl-4 offset-xl-1 col-md-6">
                     <div class="wrapper-item">
@@ -228,25 +221,42 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-lg-0 mt-5">
-                <div class="col-md-4 d-flex align-items-center justify-content-between position-relative pb-md-0 mb-md-0 pb-4 mb-4">
-                    <p class="wrapper__sub-info">Консультация <br> бесплатно</p>
-                    <img src="assets/images/svg/cons.svg" alt="icon.svg" class="wrapper__sub-icon cons_icon me-lg-2">
-                    <div class="wrapper-sub-line position-absolute"></div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="wrapper-list__title">БанкротПроект - компания, которая поможет списать ваши долги</h2>
                 </div>
-                <div class="col-md-4 d-flex align-items-center justify-content-between position-relative pb-md-0 mb-md-0 pb-4 mb-4">
-                    <p class="wrapper__sub-info">Гарантия <br> списания долга</p>
-                    <img src="assets/images/svg/garn.svg" alt="icon.svg" class="wrapper__sub-icon me-lg-2">
-                    <div class="wrapper-sub-line position-absolute"></div>
-                </div>
-                <div class="col-md-4 d-flex align-items-center justify-content-between">
-                    <p class="wrapper__sub-info">Защита от <br> коллекторов</p>
-                    <img src="assets/images/svg/secr.svg" alt="icon.svg" class="wrapper__sub-icon">
+                <div class="d-flex align-items-start justify-content-xl-between justify-content-center">
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-12 wrapper-list position-relative">
+                        <p class="wrapper-list__text">Опыт работы более 10 лет</p>
+                        <img src="assets/images/png/pr4.png" alt="icon.png" class="wrapper-list__img">
+                        <div class="line position-absolute"></div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-12 wrapper-list position-relative">
+                        <p class="wrapper-list__text">Свои арбитражные управляющие</p>
+                        <img src="assets/images/png/pr2.png" alt="icon.png" class="wrapper-list__img">
+                        <div class="line position-absolute"></div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-12 wrapper-list position-relative">
+                        <p class="wrapper-list__text">Строгое выполнение сроков</p>
+                        <img src="assets/images/png/pr3.png" alt="icon.png" class="wrapper-list__img">
+                        <div class="line position-absolute"></div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-12 wrapper-list position-relative">
+                        <p class="wrapper-list__text">Гарантия результата</p>
+                        <img src="assets/images/png/pr1.png" alt="icon.png" class="wrapper-list__img">
+                        <div class="line position-absolute"></div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-12 wrapper-list">
+                        <p class="wrapper-list__text">Лучшие цены на рынке</p>
+                        <img src="assets/images/png/pr5.png" alt="icon.png" class="wrapper-list__img">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- End wrapper -->
+
 
     <section class="slider">
         <div class="container">
@@ -264,11 +274,13 @@
                 <div class="col-12">
                     <div class="owl-carousel owl-theme">
                         <div class="item">
-                            <div class="d-flex justify-content-between flex-md-row flex-column-reverse">
+                            <div class="d-flex justify-content-between flex-lg-row flex-column-reverse">
                                 <div class="owl-carousel-list d-flex align-items-start justify-content-between flex-column">
                                     <h2 class="owl-carousel__title text-white">Банкротство физических лиц</h2>
                                     <p class="owl-carousel__text">Если Вы оказались в сложной жизненной ситуации и не справляетесь со своими кредитными обязательствами, есть способ законно избавиться от долгов!</p>
-                                    <button class="owl-carousel__btn text-white">Подробнее об услуге</button>
+                                    <a href="#">
+                                        <button class="owl-carousel__btn text-white">Подробнее об услуге</button>
+                                    </a>
                                 </div>
                                 <div class="owl-carousel-list position-relative">
                                     <img src="assets/images/png/img1.png" alt="carousel.png" class="carousel__img position-absolute w-100 h-100 top-0 start-0">
@@ -276,11 +288,13 @@
                             </div>
                         </div>
                         <div class="item">
-                            <div class="d-flex justify-content-between flex-md-row flex-column-reverse">
+                            <div class="d-flex justify-content-between flex-lg-row flex-column-reverse">
                                 <div class="owl-carousel-list d-flex align-items-start justify-content-between flex-column">
                                     <h2 class="owl-carousel__title text-white">Банкротство физических лиц</h2>
                                     <p class="owl-carousel__text">Если Вы оказались в сложной жизненной ситуации и не справляетесь со своими кредитными обязательствами, есть способ законно избавиться от долгов!</p>
-                                    <button class="owl-carousel__btn text-white">Подробнее об услуге</button>
+                                    <a href="#">
+                                        <button class="owl-carousel__btn text-white">Подробнее об услуге</button>
+                                    </a>
                                 </div>
                                 <div class="owl-carousel-list position-relative">
                                     <img src="assets/images/png/news1.png" alt="carousel.png" class="carousel__img position-absolute w-100 h-100 top-0 start-0">
@@ -294,11 +308,13 @@
                 <div class="col-12">
                     <div class="owl-carousel owl-theme">
                         <div class="item">
-                            <div class="d-flex justify-content-between flex-md-row flex-column-reverse">
+                            <div class="d-flex justify-content-between flex-lg-row flex-column-reverse">
                                 <div class="owl-carousel-list d-flex align-items-start justify-content-between flex-column">
                                     <h2 class="owl-carousel__title text-white">Банкротство юридических лиц</h2>
                                     <p class="owl-carousel__text">Если Вы оказались в сложной жизненной ситуации и не справляетесь со своими кредитными обязательствами, есть способ законно избавиться от долгов!</p>
-                                    <button class="owl-carousel__btn text-white">Подробнее об услуге</button>
+                                    <a href="#">
+                                        <button class="owl-carousel__btn text-white">Подробнее об услуге</button>
+                                    </a>
                                 </div>
                                 <div class="owl-carousel-list position-relative">
                                     <img src="assets/images/png/news1.png" alt="carousel.png" class="carousel__img position-absolute w-100 h-100 top-0 start-0">
@@ -306,11 +322,13 @@
                             </div>
                         </div>
                         <div class="item">
-                            <div class="d-flex justify-content-between flex-md-row flex-column-reverse">
+                            <div class="d-flex justify-content-between flex-lg-row flex-column-reverse">
                                 <div class="owl-carousel-list d-flex align-items-start justify-content-between flex-column">
                                     <h2 class="owl-carousel__title text-white">Банкротство юридических лиц</h2>
                                     <p class="owl-carousel__text">Если Вы оказались в сложной жизненной ситуации и не справляетесь со своими кредитными обязательствами, есть способ законно избавиться от долгов!</p>
-                                    <button class="owl-carousel__btn text-white">Подробнее об услуге</button>
+                                    <a href="#">
+                                        <button class="owl-carousel__btn text-white">Подробнее об услуге</button>
+                                    </a>
                                 </div>
                                 <div class="owl-carousel-list position-relative">
                                     <img src="assets/images/png/img1.png" alt="carousel.png" class="carousel__img position-absolute w-100 h-100 top-0 start-0">
@@ -329,6 +347,33 @@
         </div>
     </section>
     <!-- End slider -->
+    
+    <section class="whyChooseUs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="whyChooseUs__title">Почему выбирают нас</h3>
+                </div>
+            </div>
+            <div class="row mt-lg-0 mt-5">
+                <div class="col-md-4 d-flex align-items-center justify-content-between justify-content-sm-center position-relative pb-md-0 mb-md-0 pb-4 mb-4">
+                    <p class="whyChooseUs__info me-4">Консультация <br> бесплатно</p>
+                    <img src="assets/images/svg/cons.svg" alt="icon.svg" class="whyChooseUs__sub-icon cons_icon">
+                    <div class="whyChooseUs-line position-absolute"></div>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-between justify-content-sm-center position-relative pb-md-0 mb-md-0 pb-4 mb-4">
+                    <p class="whyChooseUs__info me-4">Гарантия <br> списания долга</p>
+                    <img src="assets/images/svg/garn.svg" alt="icon.svg" class="whyChooseUs__sub-icon">
+                    <div class="whyChooseUs-line position-absolute"></div>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-between justify-content-sm-center">
+                    <p class="whyChooseUs__info me-4">Защита от <br> коллекторов</p>
+                    <img src="assets/images/svg/secr.svg" alt="icon.svg" class="whyChooseUs__sub-icon">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End why choose us -->
 
     <section class="questions">
         <div class="container">
@@ -353,47 +398,14 @@
 
     <section class="project">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 col-12">
                     <video poster="assets/images/png/video.png" 
                             src="assets/video/video.mp4" 
                             data-overlay="1" 
                             data-ckin="compact"
                             >
                     </video>
-                </div>
-                <div class="col-lg-4">
-                    <div class="project-item d-flex align-items-center justify-content-between position-relative ms-0 ms-lg-3">
-                        <p class="project-item__text">Гарантия <br> Результата</p>
-                        <img src="assets/images/png/pr1.png" alt="icon.png" class="project-item__png">
-                        <div class="line-sub"></div>
-                    </div>
-                    <div class="project-item d-flex align-items-center justify-content-between position-relative ms-0 ms-lg-3">
-                        <p class="project-item__text">Свои арбитражные <br> управляющие</p>
-                        <img src="assets/images/png/pr2.png" alt="icon.png" class="project-item__png">
-                        <div class="line-sub d-lg-none"></div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="project-item d-flex align-items-center justify-content-between position-relative ms-0 ms-lg-3">
-                        <p class="project-item__text">Строгое соблюдение <br> сроков</p>
-                        <img src="assets/images/png/pr3.png" alt="icon.png" class="project-item__png">
-                        <div class="line-right"></div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="project-item d-flex align-items-center justify-content-between position-relative ms-0 ms-lg-3">
-                        <p class="project-item__text">Опыт работы <br> более 10 лет</p>
-                        <img src="assets/images/png/pr4.png" alt="icon.png" class="project-item__png">
-                        <div class="line-right"></div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="project-item d-flex align-items-center justify-content-between position-relative ms-0 ms-lg-3">
-                        <p class="project-item__text">Лучшие цены <br> на рынке</p>
-                        <img src="assets/images/png/pr5.png" alt="icon.png" class="project-item__png">
-                    </div>
                 </div>
             </div>
         </div>
@@ -403,10 +415,10 @@
     <section class="reviews">
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex align-items-start justify-content-between align-items-xl-center flex-xl-row flex-column">
+                <div class="col-12 d-flex align-items-start justify-content-between align-items-xl-center flex-column">
                     <h2 class="reviews__title">Отзывы о компании <br> «БанкротПроект»</h2>
-                    <div class="reviews-info  mt-4 mt-xl-0">
-                        <div class="d-flex align-items-center flex-column flex-sm-row w-100">
+                    <div class="reviews-info mt-4 mt-xl-0 d-flex align-items-center flex-wrap">
+                        <div class="d-flex">
                             <div class="d-flex align-items-center justify-content-center justify-content-sm-start w-100">
                                 <span class="reviews-info__num">5.0</span>
                             <div class="ms-2">
@@ -430,10 +442,8 @@
                                 <span class="reviews-info__grade">51 оценка</span>
                             </div>
                             </div>
-                            <div class="w-100 px-3">
-                                <button class="reviews-info__btn">Отзывы на Яндекс.Справочник</button>
-                            </div>
                         </div>
+                        <button class="reviews-info__btn">Отзывы на Яндекс.Справочник</button>
                     </div>
                 </div>
             </div>
@@ -472,8 +482,8 @@
 
     <section class="our-team">
         <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-4">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-10 col-12">
                     <div class="our-team-item">
                         <div class="meneger position-relative">
                             <img src="assets/images/png/our-team.png" alt="meneger.png" class="meneger__png position-absolute top-0 start-0 w-100 h-100">
@@ -482,7 +492,7 @@
                         <p class="meneger__info">Арбитражный Управляющий</p>
                     </div>
                 </div>
-                <div class="col-md-8 ps-0 ps-lg-4 text-center text-md-start">
+                <div class="col-lg-8 col-12 ps-0 ps-lg-4 text-center text-lg-start">
                     <h2 class="our-team__title">Индивидуальный подход к каждому клиенту</h2>
                     <div class="d-flex flex-wrap flex-sm-nowrap mt-5">
                         <div class="our-team-list d-flex align-items-center justify-content-between">
@@ -570,11 +580,13 @@
             <div class="row">
                 <div class="col-12 d-flex align-items-center justify-content-between">
                     <h2 class="news__title text-white">Новости</h2>
-                    <button class="news__allBtn">Все новости</button>
+                    <a href="#">
+                        <button class="news__allBtn">Все новости</button>
+                    </a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-7">
+            <div class="row d-flex align-items-start justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="news-item">
                         <div class="news-item-photo position-relative">
                             <img src="assets/images/png/news1.png" alt="news.png" class="news-item-photo__png position-absolute top-0 start-0 w-100 h-100">
@@ -585,23 +597,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-5 d-flex justify-content-between flex-column">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="news-item">
                         <div class="news-item-photo photo-last position-relative">
                             <img src="assets/images/png/news2.png" alt="news.png" class="news-item-photo__png position-absolute top-0 start-0 w-100 h-100">
                         </div>
-                        <div class="news-item-info-last">
-                            <a href="#" class="news-item-info-last__title">Как и почему гражданам-банкротам не прощают долги</a>
-                            <p class="news-item-info-last__text">Персональное банкротство, введенное в России почти шесть лет назад, стремительно набирает популярность.</p>
+                        <div class="news-item-info">
+                            <a href="#" class="news-item-info__title">Как и почему гражданам-банкротам не прощают долги</a>
+                            <p class="news-item-info__text">Персональное банкротство, введенное в России почти шесть лет назад, стремительно набирает популярность.</p>
                         </div>
                     </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="news-item">
                         <div class="news-item-photo photo-last position-relative">
                             <img src="assets/images/png/news3.png" alt="news.png" class="news-item-photo__png position-absolute top-0 start-0 w-100 h-100">
                         </div>
-                        <div class="news-item-info-last">
-                            <a href="#" class="news-item-info-last__title">Москвич Цукерберг признан банкротом</a>
-                            <p class="news-item-info-last__text">Марк Эллиот Цукерберг, который до смены в 2018 году имени и фамилии был Юрием Шишлянниковым, Арбитражным судом Москвы признан банкротом.</p>
+                        <div class="news-item-info">
+                            <a href="#" class="news-item-info__title">Москвич Цукерберг признан банкротом</a>
+                            <p class="news-item-info__text">Марк Эллиот Цукерберг, который до смены в 2018 году имени и фамилии был Юрием Шишлянниковым, Арбитражным судом Москвы признан банкротом.</p>
                         </div>
                     </div>
                 </div>
@@ -634,7 +648,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 mobile-col col-md-7 d-flex align-items-start justify-content-between">
+                <div class="mobile-col col-md-6 d-flex align-items-start justify-content-between">
                     <ul class="footer-item text-white">
                         <li class="footer-item__title">Меню</li>
                         <li class="footer-item__list"><a href="#" class="footer-item__link">Главная</a></li>
@@ -659,7 +673,7 @@
                         <li class="footer-item__list"><a href="#" class="footer-item__link">Карта сайта</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-6 col-md-5 mt-5">
+                <div class="col-md-6 mt-5">
                     <div class="footer-contact">
                         <div class="text-md-end text-center mb-4">
                             <a href="tel:+7 (499) 938-84-48" class="footer-contact__phone">+7 (499) 938-84-48</a>

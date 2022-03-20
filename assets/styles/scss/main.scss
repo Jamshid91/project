@@ -1,3 +1,4 @@
+@import './font';
 @import './color';
 
 *,*::after,*::before {
@@ -5,12 +6,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html{
     -moz-tab-size:4;
     -o-tab-size:4;
     tab-size:4;
     line-height:1.15;
-    -webkit-text-size-adjust:100%
+    -webkit-text-size-adjust:100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -62,6 +65,11 @@ a, p {
     max-width: 1320px;
 }
 
+.d-flex {
+    display: flex!important;
+    flex-wrap: wrap;
+}
+
 // Start header
 .header {
     .nav {
@@ -88,19 +96,22 @@ a, p {
         &__btn {
             width: 176px;
             height: 40px;
+            font-size: 16px;
             &:hover {
                 color: var(--white);
             }
         }
         &__address {
             color: var(--gray-light);
-            font-size: 16px;
+            font-size: 18px;
         }
         .whatsapp {
             color: var(--gray-light);
+            font-size: 24px;
+            font-weight: 500;
         }
         .burger {
-            width: 24px;
+            width: 40px;
             height: 16px;
             &__list {
                 width: 100%;
@@ -135,13 +146,19 @@ a, p {
         &__link {
             transition: .3s;
             font-size: 18px;
-            font-weight: 400;
+            font-weight: 500;
             &:hover {
                 color: var(--white);
             }
             &:hover path {
                 fill: var(--white);
             }
+        }
+        &__link.active {
+            color: var(--white);
+        }
+        &__link.active path{
+            fill: var(--white);
         }
     }
     &-list {
@@ -150,15 +167,18 @@ a, p {
         transform: translateX(-50%);
         width: 180px;
         height: auto;
-        padding: 20px 10px;
         background: var(--gradient-green);
         text-align: center;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        z-index: 0;
         display: none;
+        overflow: hidden;
+        padding-top: 15px;
         li {
-            margin-top: 10px;
+            padding: 5px 15px;
+            &:hover {
+                background-color: #9ae958;
+            }
         }
         &__link {
             color: var(--dark);
@@ -166,16 +186,25 @@ a, p {
             font-size: 18px;
             font-weight: 400;
             &:hover {
-                color: var(--white);
+                color: var(--black);
             }
         }
     }
     .header-item:hover .header-list{
         display: block;
     }
+    .header-item:hover .header-item__link{
+        color: var(--white);
+    }
+    .header-item:hover .header-item__link path{
+        fill: var(--white);
+    }
+    .header-item:hover .header-item__link svg{
+        transform: rotate(180deg);
+    }
 }
 .mobile-menu {
-    right: -600px;
+    left: -600px;
     width: 400px;
     height: 100vh;
     background-color: var(--black);
@@ -219,7 +248,7 @@ a, p {
     }
 }
 .showMenu{
-    right: 0;
+    left: 0;
 }
 .close__menu {
     top: 35px;
@@ -242,8 +271,13 @@ a, p {
 }
 .workDay {
     color: var(--gray);
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 5px;
+}
+.nav-mobile__text {
+    color: var(--gray);
+    font-size: 20px;
+    font-weight: 500;
 }
 // End header
 
@@ -251,9 +285,9 @@ a, p {
 .wrapper {
     width: 100%;
     height: 800px;
-    padding: 80px 0;
+    padding: 60px 0;
     &__bg {
-        object-fit: cover;
+        object-fit: 100% 100%;
         z-index: 0;
     }
     .container {
@@ -262,13 +296,14 @@ a, p {
     &__sup-text {
         font-size: 24px;
         font-weight: 400;
-        color: var(--gray);
+        color: #59b840;
     }
     &__title {
-        font-size: 110px;
+        font-size: 4.375rem;
         font-weight: 700;
         color: var(--white);
-        line-height: 110px;
+        line-height: 90px;
+        margin: 0 0 0.25em;
     }
     &-item {
         width: 100%;
@@ -287,7 +322,7 @@ a, p {
             }
         }
         .debt, &__inp {
-            height: 56px;
+            height: 50px;
             border-radius: 8px;
             font-size: 24px;
             font-weight: 400;
@@ -334,7 +369,7 @@ a, p {
             }
         }
         &__btn {
-            height: 64px;
+            height: 50px;
             font-size: 24px;
         }
         &__text {
@@ -354,6 +389,29 @@ a, p {
         height: 144px;
         background-color: rgba(89, 89, 89, 1);
     }
+    &-list__title {
+        color: var(--gray-light);
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 40px;
+    }
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__text {
+            font-size: 22px;
+            font-weight: 400;
+            color: var(--gray);
+        }
+        .line {
+            width: 2px;
+            height: 100%;
+            background-color: var(--gray-dark);
+            top: 0;
+            right: -20px;
+        }
+    } 
 }
 // End wrapper
 
@@ -386,7 +444,7 @@ a, p {
         color: #fff;
     }
     .owl-carousel {
-        margin-top: 70px;
+        margin-top: 50px;
         .item {
             background-color: var(--dark);
             padding: 32px 48px;
@@ -395,14 +453,15 @@ a, p {
         &-list {
             width: 48.5%;
             height: 465px;
+            border-radius: 8px;
+            overflow: hidden;
         }
         &__img {
-            object-fit: cover;
-            border-radius: 8px;
+            object-fit: contain;
         }
         &__title {
-            font-size: 80px;
-            line-height: 80px;
+            font-size: 40px;
+            line-height: 70px;
             font-weight: 500;
         }
         &__text {
@@ -420,6 +479,7 @@ a, p {
         color: var(--gray);
         font-size: 24px;
         font-weight: 400;
+        
     }
 }
 .owl-nav button {
@@ -434,16 +494,11 @@ a, p {
     color: #000 !important;
     outline: none !important;
 }
-.owl-nav button span {
-    position: absolute;
-    top: 0%;
-    transform: translateY(-50%);
-    display: block;
-    width: 48px !important;
-    height: 48px !important;
-    z-index: 99;
-    font-family: serif;
-    font-weight: 100;
+.owl-nav button svg {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 .owl-nav button:hover {
     background: var(--gradient-green) !important;
@@ -455,30 +510,54 @@ a, p {
 .owl-next {
     right: -25px;
 }
-
 // End Carousel
 
+.whyChooseUs {
+    background-color: var(--gray-dark);
+    padding: 50px 0;
+    &__title {
+        font-size: 40px;
+        font-weight: 500;
+        color: var(--white);
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__info {
+        color: var(--gray);
+        font-size: 24px;
+    }
+    &-line {
+        transform: translateY(-50%);
+        top: 50%;
+        right: 0;
+        width: 3px;
+        height: 100px;
+        background-color: rgba(89, 89, 89, 1);
+    }
+}
+// End why Choose Us
 
 .questions {
     width: 100%;
     padding: 80px 0;
     background-image: url('../../images/png/discount.png');
-    background-size: cover;
+    background-size: 100% 100%;
+    text-align: center;
 
     &__title {
-        font-size: 40px;
+        font-size: 32px;
         font-weight: 400;
         color: var(--gray-light);
     }
     &__sub-title {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 400;
         color: var(--gray);
     }
     &-form {
         &__inp {
             width: 320px;
-            height: 64px;
+            height: 50px;
             border-radius: 8px;
             border: 1px solid #F0F0F0;
             font-size: 24px;
@@ -486,7 +565,7 @@ a, p {
         }
         &__btn {
             width: 320px;
-            height: 64px;
+            height: 50px;
             color: var(--white);
             font-size: 24px;
         }
@@ -496,7 +575,7 @@ a, p {
 
 .project {
     width: 100%;
-    padding: 160px 0;
+    padding: 80px 0;
     background-color: #121212;
 
     .compact__button--big{
@@ -527,36 +606,11 @@ a, p {
             background: var(--gradient-green);
         }
     }
-
-    &-item {
-        padding: 30px 0 50px 0;
-        &__text {
-            font-size: 24px;
-            font-weight: 400;
-            color: var(--gray);
-        }
-        .line-sub, .line-right {
-            position: absolute;
-            background-color: var(--dark);
-        }
-        .line-sub {
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 4px;
-        }
-        .line-right {
-            top: 0;
-            right: -20px;
-            width: 4px;
-            height: 100%;
-        }
-    }
 }
 // End project
 
 .reviews {
-    padding: 80px 0 160px 0;
+    padding: 80px 0;
     background-color: var(--black);
 
     &__title {
@@ -597,7 +651,7 @@ a, p {
                 }
             }
             .user__name {
-                font-size: 80px;
+                font-size: 40px;
                 color: var(--white);
                 margin-left: 40px;
             }
@@ -619,15 +673,16 @@ a, p {
 // reviews
 
 .our-team {
-    padding: 80px 0 160px 0;
+    padding: 50px 0;
     background-image: url('../../images/png/comand.png');
+    background-size: 100% 100%;
 
     .meneger {
         width: 100%;
         height: 518px;
         font-weight: 400;
         &__png {
-            object-fit: cover;
+            object-fit: 100% 100%;
         }
         &__name {
             font-size: 24px;
@@ -642,7 +697,7 @@ a, p {
         }
     }
     &__title {
-        font-size: 80px;
+        font-size: 40px;
         font-weight: 500;
         line-height: 80px;
         color: var(--white);
@@ -675,7 +730,7 @@ a, p {
     padding: 80px 0;
     background-color: var(--dark);
     &__title {
-        font-size: 80px;
+        font-size: 70px;
         font-weight: 500;
         margin-bottom: 45px;
     }
@@ -685,7 +740,7 @@ a, p {
             width: 45px;
             height: 45px;
             background: var(--gradient-green);
-            font-size: 40px;
+            font-size: 30px;
             font-weight: 800;
         } 
         .lines {
@@ -743,11 +798,11 @@ a, p {
 // End agreement
 
 .news {
-    padding: 160px 0;
+    padding: 80px 0;
     background-color: var(--black);
     position: relative;
     &__title {
-        font-size: 80px;
+        font-size: 64px;
         line-height: 80px;
         font-weight: 500;
     }
@@ -757,20 +812,20 @@ a, p {
             border-radius: 8px;
             background: var(--blue);
             color:var(--white);
-            font-size: 24px;
+            font-size: 32px;
             font-weight: 400;
     }
     &-item {
         margin-top: 40px;
         &-photo {
             width: 100%;
-            height: 550px;
+            height: 236px;
             overflow: hidden;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
 
             &__png {
-                object-fit: cover;
+                object-fit: 100% 100%;
                 transition: .3s;
                 border-top-left-radius: 8px;
                 border-top-right-radius: 8px;
@@ -785,32 +840,7 @@ a, p {
             padding: 32px;
             border-bottom-left-radius: 8px;
             border-bottom-right-radius: 8px;
-
-            &__title {
-                font-size: 40px;
-                font-weight: 500;
-                line-height: 44px;
-                transition: .3s;
-                &:hover {
-                    color: var(--gray-dark);
-                }
-            }
-            &__text {
-                font-size: 24px;
-                font-weight: 400;
-                line-height: 32px;
-                margin-top: 16px;
-            }
-        }
-        
-        .photo-last {
-            height: 236px;
-        }
-        &-info-last {
-            background: var(--dark);
-            padding: 32px;
-            border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
+            height: 200px;
 
             &__title {
                 color: var(--white);
@@ -818,13 +848,31 @@ a, p {
                 font-weight: 500;
                 line-height: 32px;
                 transition: .3s;
+                max-width: 100%;
+                height: 70px;
+                overflow-wrap: break-word;
+                overflow: hidden;
+                text-transform: uppercase;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
                 &:hover {
-                    color: var(--gray);
+                    color: var(--gray-dark);
                 }
             }
             &__text {
-                color: var(--gray);
-                margin-top: 8px;
+                font-weight: 400;
+                margin-top: 5px;
+                max-width: 100%;
+                height: 55px;
+                overflow-wrap: break-word;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+                color: var(--white);
             }
         }
     }
@@ -832,8 +880,9 @@ a, p {
 // End news
 
 .footer{
-    padding-top: 80px;
+    padding-top: 60px;
     background-image: url('../../images/png/comand.png');
+    background-size: 100% 100%;
 
     &-item {
         &__title {
@@ -860,10 +909,11 @@ a, p {
     &-contact {
         &__text {
             color: var(--gray);
+            font-family: 'Circe', sans-serif;
         }
         &__phone {
             color: var(--white);
-            font-size: 40px;
+            font-size: 36px;
             font-weight: 500;
             transition: .3s;
             &:hover {
@@ -872,7 +922,7 @@ a, p {
         }
         &__email {
             color: var(--white);
-            font-size: 40px;
+            font-size: 36px;
             font-weight: 500;
         }
         &__address {
